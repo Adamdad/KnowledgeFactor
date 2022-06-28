@@ -54,7 +54,7 @@ model = dict(
                                    out_indices=(7, ),
                                    widen_factor=0.5),
                      in_channels=1280,
-                     out_channels=512)
+                     out_channels=1280)
         ),
         teacher=dict(
             type='WideResNet_CIFAR',
