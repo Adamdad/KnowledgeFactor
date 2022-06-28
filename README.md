@@ -15,4 +15,8 @@ Factorize the knowledge from a multi-talented teacher to students
         mim install mmcv-full
         mim install mmcls
 
-3. Download the checkpoint
+3. Download the teacher checkpoint
+
+| Name | Link|
+|--- | --- |
+| wideresnet28-2-b128x1_cifar10 | [checkpoint](https://drive.google.com/file/d/1_MgpoL8F_2wwgC6UD_tdDcX_teGgg3Mh/view?usp=sharing)  [log](https://drive.google.com/file/d/179_3yTHX8xmxYMQWMdwiLSNeSPEUn1mY/view?usp=sharing)|
