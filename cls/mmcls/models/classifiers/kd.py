@@ -1,12 +1,11 @@
 import copy
-import torch
-import torch.nn.functional as F
 import warnings
 from shutil import ExecError
-from torch import nn
-from torch._C import wait
 
-from mmcls.models.losses.kd_loss import InfoMax_loss, InfoMax_loss_dist_l2, L2_loss
+import torch
+import torch.nn.functional as F
+from torch import nn
+
 from ..builder import (CLASSIFIERS, build_backbone, build_head, build_loss,
                        build_neck)
 from ..utils.augment import Augments
@@ -183,4 +182,3 @@ class KDImageClassifier(BaseClassifier):
             raise e
 
         return res
-
