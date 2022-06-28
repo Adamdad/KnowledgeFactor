@@ -27,3 +27,8 @@ Factorize the knowledge from a multi-talented teacher to students
 - [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html) (Automatic downloaded)
 - [ImageNet](https://www.image-net.org)
 - [Shape3D](https://github.com/deepmind/3d-shapes) and [dSprites](https://github.com/deepmind/dsprites-dataset)
+
+## Get Started
+1. Given a $CONGIG file, we can simply run
+        
+        python tools/dist_train.py $CONGIG $NUM_GPUS
