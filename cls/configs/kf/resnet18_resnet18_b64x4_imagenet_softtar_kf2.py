@@ -87,7 +87,7 @@ model = dict(
         teacher=dict(
             type='LinearClsHead',
             num_classes=1000,
-            in_channels=128,
+            in_channels=512,
             loss=dict(type='CrossEntropyLoss',
                       loss_weight=1.0),
         )
