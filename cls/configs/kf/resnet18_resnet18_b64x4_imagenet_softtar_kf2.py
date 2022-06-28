@@ -35,7 +35,7 @@ model = dict(
         lambda_feat=1.0,
         alpha=1.0,
         beta=1e-3,
-        task_weight=1.0,
+        task_weight=0.1,
         teacher_checkpoint='/home/yangxingyi/.cache/torch/checkpoints/resnet18-5c106cde.pth',
         feat_channels=dict(student=[128, 256, 512],
                            teacher=[128, 256, 512]),
