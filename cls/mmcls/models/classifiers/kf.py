@@ -120,20 +120,20 @@ class KFImageClassifier(BaseClassifier):
 
     def load_teacher(self):
         split_lins = '*' * 20
-        print(split_lins)
-        print(self.teacher_ckpt)
-        print(split_lins)
+        state_dict = torch.load(self.teacher_ckpt)
         try:
-            self.teacher.load_state_dict(
-                torch.load(self.teacher_ckpt)['state_dict'])
+            
+            if 'state_dict' in state_dict.keys():
+                state_dict = state_dict['state_dict']
+            self.teacher.load_state_dict(state_dict)
             print(split_lins)
             print(
                 f'Teacher pretrained model has been loaded {self.teacher_ckpt}')
             print(split_lins)
         except:
-            state_dict = torch.load(self.teacher_ckpt)
-            print(state_dict.keys())
             print('Teacher model not loaded')
+            print(state_dict.keys())
+            print(self.teacher.state_dict().keys())
             AssertionError('Teacher model not loaded')
             exit()
 
