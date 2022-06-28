@@ -131,7 +131,8 @@ class KFImageClassifier(BaseClassifier):
                 f'Teacher pretrained model has been loaded {self.teacher_ckpt}')
             print(split_lins)
         except:
-            ExecError('Teacher model not loaded')
+            AssertionError('Teacher model not loaded')
+
         for param in self.teacher.parameters():
             param.requires_grad = False
 
