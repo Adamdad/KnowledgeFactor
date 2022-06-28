@@ -8,10 +8,9 @@ from .label_smooth_loss import LabelSmoothLoss
 from .utils import (convert_to_one_hot, reduce_loss, weight_reduce_loss,
                     weighted_loss)
 from .kd_loss import Logits, SoftTarget
-from .one_loss import OneLoss
 __all__ = [
     'accuracy', 'Accuracy', 'asymmetric_loss', 'AsymmetricLoss',
     'cross_entropy', 'binary_cross_entropy', 'CrossEntropyLoss', 'reduce_loss',
     'weight_reduce_loss', 'LabelSmoothLoss', 'weighted_loss', 'FocalLoss',
-    'sigmoid_focal_loss', 'convert_to_one_hot', 'Logits', 'SoftTarget', 'OneLoss'
+    'sigmoid_focal_loss', 'convert_to_one_hot', 'Logits', 'SoftTarget'
 ]
