@@ -119,13 +119,13 @@ class KFImageClassifier(BaseClassifier):
         pass
 
     def load_teacher(self):
+        split_lins = '*' * 20
         print(split_lins)
         print(self.teacher_ckpt)
         print(split_lins)
         try:
             self.teacher.load_state_dict(
                 torch.load(self.teacher_ckpt)['state_dict'])
-            split_lins = '*' * 20
             print(split_lins)
             print(
                 f'Teacher pretrained model has been loaded {self.teacher_ckpt}')
