@@ -11,13 +11,19 @@ def main():
 
 def ckp_to_load():
     ckp_path = '/home/yangxingyi/.cache/torch/checkpoints/resnet18-5c106cde.pth'
+    save_path = '/home/yangxingyi/.cache/torch/checkpoints/resnet18-5c106cde_converted.pth'
     model_dict = torch.load(ckp_path)
     new_dict = dict()
-    for k in model_dict.keys():
+    for k, v in model_dict.items():
         if k.startswith('fc'):
-            k.replace('fc',)
-
+            new_k = 'head.{}'.format(k)
+        else:
+            new_k = 'backbone.{}'.format(k)
+        new_dict[new_k] = v
+    save_dict= dict(state_dict=new_dict)
+    torch.save(save_dict, save_path, _use_new_zipfile_serialization=False)
 
 if __name__ == '__main__':
-    main()
+    # main()
+    ckp_to_load()
     
