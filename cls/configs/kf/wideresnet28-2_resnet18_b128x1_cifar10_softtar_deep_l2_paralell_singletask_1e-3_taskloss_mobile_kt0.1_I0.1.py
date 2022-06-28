@@ -30,7 +30,7 @@ runner = dict(type='EpochBasedRunner', max_epochs=200)
 
 # model settings
 model = dict(
-    type='KFTaskParallelImageClassifierv2',
+    type='KFImageClassifier',
     kd_loss=dict(type='SoftTarget',
                  temperature=10.0),
     train_cfg=dict(
