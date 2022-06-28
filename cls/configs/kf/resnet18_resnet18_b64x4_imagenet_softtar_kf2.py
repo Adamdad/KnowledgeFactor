@@ -64,7 +64,7 @@ model = dict(
     head=dict(
         student=dict(
             type='LinearClsHead',
-            num_classes=10,
+            num_classes=1000,
             in_channels=512,
             loss=dict(
                 type='LabelSmoothLoss',
@@ -75,7 +75,7 @@ model = dict(
         ),
         task=dict(
             type='LinearClsHead',
-            num_classes=10,
+            num_classes=1000,
             in_channels=512,
             loss=dict(
                 type='LabelSmoothLoss',
