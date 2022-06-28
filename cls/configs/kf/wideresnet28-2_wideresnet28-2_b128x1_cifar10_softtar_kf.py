@@ -40,7 +40,7 @@ model = dict(
         beta=1e-3,
         task_weight=1.0,
         teacher_checkpoint='/home/yangxingyi/NeuralFactor/NeuralFactor/work_dirs/wideresnet28-2-b128x1_cifar10/latest.pth',
-        feat_channels=dict(student=[160, 320, 1280],
+        feat_channels=dict(student=[32, 64, 128],
                            teacher=[32, 64, 128]),
     ),
     backbone=dict(
@@ -54,7 +54,7 @@ model = dict(
                                    out_indices=(7, ),
                                    widen_factor=0.5),
                      in_channels=1280,
-                     out_channels=1280)
+                     out_channels=128)
         ),
         teacher=dict(
             type='WideResNet_CIFAR',
@@ -87,7 +87,7 @@ model = dict(
         task=dict(
             type='LinearClsHead',
             num_classes=10,
-            in_channels=1280,
+            in_channels=512,
             loss=dict(
                 type='LabelSmoothLoss',
                 label_smooth_val=0.1,
