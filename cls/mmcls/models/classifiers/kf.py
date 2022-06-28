@@ -131,6 +131,8 @@ class KFImageClassifier(BaseClassifier):
                 f'Teacher pretrained model has been loaded {self.teacher_ckpt}')
             print(split_lins)
         except:
+            state_dict = torch.load(self.teacher_ckpt)
+            print(state_dict.keys())
             print('Teacher model not loaded')
             AssertionError('Teacher model not loaded')
             exit()
