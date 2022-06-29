@@ -24,9 +24,9 @@ Factorize the knowledge from a multi-talented teacher to students
     | ResNet-18 | CIFAR10 | [checkpoint(from mmcls)](https://download.openmmlab.com/mmclassification/v0/resnet/resnet18_b16x8_cifar10_20210528-bd6371c8.pth) [log(from mmcls)](https://download.openmmlab.com/mmclassification/v0/resnet/resnet18_b16x8_cifar10_20210528-bd6371c8.log.json)|
 
 4. Prepare the data. 
-- [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html) (Automatic downloaded)
-- [ImageNet](https://www.image-net.org)
-- [Shape3D](https://github.com/deepmind/3d-shapes) and [dSprites](https://github.com/deepmind/dsprites-dataset)
+    - [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html) (Automatic downloaded)
+    - [ImageNet](https://www.image-net.org)
+    - [Shape3D](https://github.com/deepmind/3d-shapes) and [dSprites](https://github.com/deepmind/dsprites-dataset)
 
 ## Get Started
 1. Given a $CONGIG file, we can simply run
