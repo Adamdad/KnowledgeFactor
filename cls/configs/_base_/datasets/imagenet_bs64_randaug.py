@@ -31,7 +31,7 @@ test_pipeline = [
     dict(type='Collect', keys=['img'])
 ]
 data = dict(
-    samples_per_gpu=256,
+    samples_per_gpu=64,
     workers_per_gpu=4,
     train=dict(
         type=dataset_type,
