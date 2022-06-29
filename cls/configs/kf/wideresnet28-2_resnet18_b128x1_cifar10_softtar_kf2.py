@@ -2,6 +2,7 @@ _base_ = [
     '../_base_/datasets/cifar10_bs128.py'
 ]
 
+# 93.99
 # checkpoint saving
 checkpoint_config = dict(interval=10)
 # yapf:disable
