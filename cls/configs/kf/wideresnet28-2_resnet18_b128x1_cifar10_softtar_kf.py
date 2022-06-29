@@ -2,7 +2,6 @@ _base_ = [
     '../_base_/datasets/cifar10_bs128.py'
 ]
 
-# 94.34
 # checkpoint saving
 checkpoint_config = dict(interval=10)
 # yapf:disable
@@ -35,10 +34,6 @@ model = dict(
     kd_loss=dict(type='SoftTarget',
                  temperature=10.0),
     train_cfg=dict(
-        augments=[
-            dict(type='BatchMixup', alpha=0.1,
-                 num_classes=10, prob=0.5)
-        ],
         lambda_kd=0.1,
         lambda_feat=1.0,
         alpha=1.0,
