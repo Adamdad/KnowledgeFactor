@@ -1,3 +1,7 @@
+img_norm_cfg = dict(
+    mean=[125.307, 122.961, 113.8575],
+    std=[51.5865, 50.847, 51.255],
+    to_rgb=False)
 rand_increasing_policies = [
     dict(type='AutoContrast'),
     dict(type='Brightness', magnitude_key='magnitude',
