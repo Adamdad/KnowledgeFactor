@@ -36,7 +36,6 @@ model = dict(
     train_cfg=dict(lambda_kd=0.1,
                    teacher_checkpoint=None), # Input your teacher checkpoint
     backbone=dict(
-        # return_tuple=False,
         student=dict(
             type='ResNet_CIFAR',
             depth=18,
