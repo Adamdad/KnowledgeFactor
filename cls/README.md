@@ -36,3 +36,10 @@
         python tools/dist_train.py configs/imagene-kd/resnet18_resnet18_b32x8_imagenet_softtar_kd.py 8 # KD
 
         python tools/dist_train.py configs/imagenet-kf/resnet18_resnet18_b32x8_imagenet_softtar_kf.py 8 # KF
+
+## Pretrained Weights
+You can download the pretrained weights from the below links
+
+| CKN | TSN | Dataset | Discription | Link|
+|--- |  --- | --- | --- | --- |
+| ResNet18 | MobileNetv2x0.5 | ImageNet | 1-Task Factorized from ResNet18 Teacher |[checkpoint](https://drive.google.com/file/d/1QRbdCkRrFeXFwBIn9JkT8YjqKPDs9kZK/view?usp=sharing)  [log](https://drive.google.com/file/d/1PpiP5Tb1uykLUtLikTfMnJIRQ8J_lOcm/view?usp=sharing)|
