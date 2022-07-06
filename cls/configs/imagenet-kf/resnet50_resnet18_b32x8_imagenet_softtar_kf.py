@@ -38,7 +38,7 @@ model = dict(
         task_weight=0.1,
         teacher_checkpoint='/home/yangxingyi/.cache/torch/checkpoints/resnet50_8xb32_in1k_20210831-ea4938fc.pth',
         feat_channels=dict(student=[128, 256, 512],
-                           teacher=[128, 256, 512]),
+                           teacher=[512, 1024, 2048]),
     ),
     backbone=dict(
         num_task=1,
