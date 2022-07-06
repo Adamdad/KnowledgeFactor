@@ -121,10 +121,9 @@ class KFImageClassifier(BaseClassifier):
     def load_teacher(self):
         split_lins = '*' * 20
         state_dict = torch.load(self.teacher_ckpt)
+        if 'state_dict' in state_dict.keys():
+            state_dict = state_dict['state_dict']
         try:
-            
-            if 'state_dict' in state_dict.keys():
-                state_dict = state_dict['state_dict']
             self.teacher.load_state_dict(state_dict)
             print(split_lins)
             print(
