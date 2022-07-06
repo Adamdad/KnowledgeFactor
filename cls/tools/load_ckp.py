@@ -10,8 +10,8 @@ def main():
     print(model_dict.keys())
 
 def ckp_to_load():
-    ckp_path = '/home/yangxingyi/.cache/torch/checkpoints/resnet18-5c106cde.pth'
-    save_path = '/home/yangxingyi/.cache/torch/checkpoints/resnet18-5c106cde_converted.pth'
+    ckp_path = '/home/yangxingyi/.cache/torch/checkpoints/resnet50_8xb32_in1k_20210831-ea4938fc.pth'
+    save_path = '/home/yangxingyi/.cache/torch/checkpoints/resnet50_8xb32_in1k_20210831-ea4938fc_converted.pth'
     model_dict = torch.load(ckp_path)
     new_dict = dict()
     for k, v in model_dict.items():
