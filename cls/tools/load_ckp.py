@@ -13,6 +13,8 @@ def ckp_to_load():
     ckp_path = '/home/yangxingyi/.cache/torch/checkpoints/resnet50_8xb32_in1k_20210831-ea4938fc.pth'
     save_path = '/home/yangxingyi/.cache/torch/checkpoints/resnet50_8xb32_in1k_20210831-ea4938fc_converted.pth'
     model_dict = torch.load(ckp_path)
+    if 'state_dict' in model_dict.keys():
+        model_dict = model_dict['state_dict']
     new_dict = dict()
     for k, v in model_dict.items():
         if k.startswith('fc'):
