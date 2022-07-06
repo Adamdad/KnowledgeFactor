@@ -21,6 +21,7 @@ def ckp_to_load():
             new_k = 'head.{}'.format(k)
         else:
             new_k = 'backbone.{}'.format(k)
+        print('Old Key:', k, '-> New Key:', new_k)
         new_dict[new_k] = v
     save_dict= dict(state_dict=new_dict)
     torch.save(save_dict, save_path, _use_new_zipfile_serialization=False)
