@@ -3,8 +3,7 @@ _base_ = [
     '../_base_/schedules/imagenet_bs256_coslr.py'
 ]
 
-# checkpoint saving
-checkpoint_config = dict(interval=10)
+
 # yapf:disable
 log_config = dict(
     interval=100,
@@ -98,4 +97,4 @@ model = dict(
     )
 )
 
-checkpoint_config = dict(max_keep_ckpts=2)
+checkpoint_config = dict(interval=10, max_keep_ckpts=2)
