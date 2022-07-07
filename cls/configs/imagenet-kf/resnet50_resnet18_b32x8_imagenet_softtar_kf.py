@@ -98,4 +98,4 @@ model = dict(
     )
 )
 
-checkpoint_config = dict(max_keep_ckpts=1)
+checkpoint_config = dict(max_keep_ckpts=2)
