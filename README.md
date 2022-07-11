@@ -1,7 +1,7 @@
 # Factorizing Knowledge in  Neural Networks
 This is a PyTorch implementation of the paper
 
-**Factorizing Knowledge in  Neural Networks(ECCV 2022)** [pdf](https://arxiv.org/abs/2207.03337)
+[**Factorizing Knowledge in  Neural Networks(ECCV 2022)**](https://arxiv.org/abs/2207.03337)
 
 *Xingyi Yang, Jingwen Ye, Xinchao Wang* 
 
