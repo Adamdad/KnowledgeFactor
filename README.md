@@ -1,9 +1,9 @@
 # Factorizing Knowledge in  Neural Networks
 This is a PyTorch implementation of the paper
 
-**Factorizing Knowledge in  Neural Networks(ECCV 2022)** 
+**Factorizing Knowledge in  Neural Networks(ECCV 2022)** [pdf](https://arxiv.org/abs/2207.03337)
 
-*Xingyi Yang, Jingwen Ye, Xinchao Wang* [pdf](https://arxiv.org/abs/2207.03337)
+*Xingyi Yang, Jingwen Ye, Xinchao Wang* 
 
 ![kf](assets/KnowledgeFactior_full-1.png)
 In this paper, we explore a novel and ambitious knowledge-transfer task, termed Knowledge Factorization~(KF). The core idea of KF lies in the modularization 
