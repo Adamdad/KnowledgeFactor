@@ -23,7 +23,7 @@ fp16 = dict(loss_scale=512.)
 model = dict(
     type='KFImageClassifier',
     kd_loss=dict(type='SoftTarget',
-                 temperature=10.0),
+                 temperature=2.0),
     train_cfg=dict(
         augments=[
             dict(type='BatchMixup', alpha=0.1,
