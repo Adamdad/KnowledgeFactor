@@ -1,6 +1,6 @@
 _base_ = [
     '../_base_/datasets/imagenet_bs32_randaug.py',
-    '../_base_/schedules/imagenet_bs256_coslr.py'
+    '../_base_/schedules/imagenet_bs256_coslr_300e.py'
 ]
 
 
