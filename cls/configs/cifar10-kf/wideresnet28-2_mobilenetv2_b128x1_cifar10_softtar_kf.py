@@ -40,7 +40,7 @@ model = dict(
         alpha=1.0,
         beta=1e-3,
         task_weight=1.0,
-        teacher_checkpoint='/home/yangxingyi/NeuralFactor/NeuralFactor/work_dirs/wideresnet28-2-b128x1_cifar10/latest.pth',
+        teacher_checkpoint=None, # Input your teacher checkpoint
         feat_channels=dict(student=[160, 320, 1280],
                            teacher=[32, 64, 128]),
     ),
