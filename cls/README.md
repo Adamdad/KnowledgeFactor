@@ -19,6 +19,7 @@
     | WideResNet28-10 | CIFAR10 | [checkpoint](https://drive.google.com/file/d/1Gv4VRki5gToF5TNm84cdQJqU-HhU0Jy1/view?usp=sharing) [log](https://drive.google.com/file/d/1wQsAJ9gAKBJboghIO1K0eakRAsk5TwmP/view?usp=sharing)|
     | ResNet-18 | CIFAR10 | [checkpoint(from mmcls)](https://download.openmmlab.com/mmclassification/v0/resnet/resnet18_b16x8_cifar10_20210528-bd6371c8.pth) [log(from mmcls)](https://download.openmmlab.com/mmclassification/v0/resnet/resnet18_b16x8_cifar10_20210528-bd6371c8.log.json)|
     | ResNet-18 | ImageNet | [checkpoint](https://drive.google.com/file/d/1aCpmoUvTOFZ8P2OzmBpj66H7-NQfdBwc/view?usp=sharing) [log(from mmcls)](https://download.openmmlab.com/mmclassification/v0/resnet/resnet18_8xb32_in1k_20210831-fbbb1da6.log.json)|
+    | ResNet-50 | ImageNet | [checkpoint(from mmcls)](https://download.openmmlab.com/mmclassification/v0/resnet/resnet50_8xb32_in1k_20210831-ea4938fc.pth) [log(from mmcls)](https://download.openmmlab.com/mmclassification/v0/resnet/resnet50_8xb32_in1k_20210831-ea4938fc.log.json)|
 
 4. Prepare the data and put them under *data/$DATASET*
     - [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html) (Automatic downloaded)
@@ -43,3 +44,4 @@ You can download the pretrained weights from the below links
 | CKN | TSN | Dataset | Discription | Link|
 |--- |  --- | --- | --- | --- |
 | ResNet18 | MobileNetv2x0.5 | ImageNet | 1-Task Factorized from ResNet18 Teacher |[checkpoint](https://drive.google.com/file/d/1QRbdCkRrFeXFwBIn9JkT8YjqKPDs9kZK/view?usp=sharing)  [log](https://drive.google.com/file/d/1PpiP5Tb1uykLUtLikTfMnJIRQ8J_lOcm/view?usp=sharing)|
+| ResNet18 | MobileNetv2x0.5 | ImageNet | 1-Task Factorized from ResNet50 Teacher |[checkpoint](https://drive.google.com/file/d/1nCvCOrQnFzx07D2nclwud4HvMNIEPChI/view?usp=sharing) [log](https://drive.google.com/file/d/1YNTqL6Bk01Yy-q-OkknlT3e-NvNED-Pu/view?usp=sharing)
