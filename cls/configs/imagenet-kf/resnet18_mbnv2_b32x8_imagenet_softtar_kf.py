@@ -26,8 +26,8 @@ model = dict(
                  temperature=2.0),
     train_cfg=dict(
         augments=[
-            dict(type='BatchMixup', alpha=0.1,
-                 num_classes=1000, prob=0.5)
+            dict(type='BatchMixup', alpha=0.1, num_classes=1000, prob=0.5),
+            dict(type='BatchCutMix', alpha=1.0, num_classes=1000, prob=0.5)
         ],
         lambda_kd=1.0,
         lambda_feat=1.0,
