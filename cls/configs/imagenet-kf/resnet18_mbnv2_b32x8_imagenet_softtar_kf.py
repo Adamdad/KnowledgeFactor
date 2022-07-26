@@ -28,7 +28,7 @@ model = dict(
         augments=[
             dict(type='BatchMixup', alpha=0.1, num_classes=1000, prob=0.5)
         ],
-        lambda_kd=1.0,
+        lambda_kd=0.1,
         lambda_feat=1.0,
         alpha=1.0,
         beta=1e-3,
