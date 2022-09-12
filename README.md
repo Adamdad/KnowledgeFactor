@@ -3,7 +3,7 @@ This is a PyTorch implementation of the paper
 
 [**Factorizing Knowledge in  Neural Networks(ECCV 2022)**](https://arxiv.org/abs/2207.03337)
 
-[Supplementary Material](https://drive.google.com/file/d/12CyoMWD_2cYH95_QdcmbPOeN2Ejkt8-F/view?usp=sharing)
+[Supplementary Material](https://drive.google.com/file/d/1YEyDgl-aZVMqIRdSa_LJH32B5gooKx8k/view?usp=sharing)
 
 *Xingyi Yang, Jingwen Ye, Xinchao Wang* 
 
